@@ -1,0 +1,22 @@
+enum Estado{
+    ACTIVO,
+    DESACTIVADO
+}
+
+entity Usuario{
+	cedula String required  maxlength(15) unique,
+    nombre String required  maxlength(70),
+    apellido String required  maxlength(70),
+    telefono String maxlength(15),
+    correoElectronico String maxlength(70),
+    observaciones String maxlength(150),
+    estado Estado required
+}
+
+dto * with mapstruct
+service * with serviceClass
+paginate  * with pagination
+//search * with elasticsearch
+
+
+

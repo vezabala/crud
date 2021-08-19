@@ -10,7 +10,7 @@ export class ServiceService {
   usuario:Usuario[];
   constructor(private http:HttpClient) { }
 
-  Url='http://localHost:8080/CrudBasico/usuarios';
+  Url='http://localhost:8080/api/usuarios';
 
   getPersonas(){
     return this.http.get<Usuario[]>(this.Url);

@@ -16,14 +16,13 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="text-center">
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                        <tr *ngFor="let usuario of usuarios" class="text-center">
+                            <td>{{usuario.id}}</td>
+                            <td>{{usuario.nombre}}</td>
+                            <td>{{usuario.apellido}}</td>
+                            <td>{{usuario.telefono}}</td>
+                            <td>{{usuario.correoElectronico}}</td>
+                            <td>{{usuario.observaciones}}</td>
                             <td>
                                 <button class="btm btn-warning">Editar</button>
                                 <button class="btm btn-danger" style="margin-left: 10px;">Eliminar</button>
